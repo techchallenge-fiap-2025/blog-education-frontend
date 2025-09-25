@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+/* Scrollbar personalizada laranja */
+.scrollbar-orange::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollbar-orange::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 4px;
+}
+
+.scrollbar-orange::-webkit-scrollbar-thumb {
+  background: #f97316;
+  border-radius: 4px;
+}
+
+.scrollbar-orange::-webkit-scrollbar-thumb:hover {
+  background: #ea580c;
+}
+
+/* Utilitários para truncar texto */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Melhorias de responsividade */
+@media (max-width: 640px) {
+  .toast-custom {
+    min-width: 300px !important;
+  }
+}
+
+/* Animações do menu lateral - Agora usando Framer Motion */
+
+/* Melhorias para o menu mobile */
+@media (max-width: 768px) {
+  .mobile-menu {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+}
+
+/* Efeitos de transparência e blur */
+.backdrop-blur-custom {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* Melhorias para o overlay */
+.menu-overlay {
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+/* Animações suaves para o menu - Otimizadas para Framer Motion */
+.menu-item {
+  /* Transições básicas mantidas para fallback */
+  transition: all 0.2s ease-in-out;
+}
+
+/* Melhorias de performance para Framer Motion */
+.motion-element {
+  will-change: transform, opacity;
+}
