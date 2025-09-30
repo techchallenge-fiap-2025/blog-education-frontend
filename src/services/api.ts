@@ -2,7 +2,7 @@ import axios from "axios";
 import type { User, LoginResponse } from "../types/user";
 import type { Post, Comment } from "../types/post";
 
-const API_BASE_URL = "http://localhost:3001/api";
+const API_BASE_URL = "/api";
 
 // Criar instância do axios
 const api = axios.create({

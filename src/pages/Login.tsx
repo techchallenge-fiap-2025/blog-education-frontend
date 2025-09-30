@@ -56,7 +56,7 @@ function Login() {
     } catch (err: any) {
       // Verificar se é erro de credenciais inválidas
       if (
-        err.message.includes("Credenciais inválidas") ||
+        err.message.includes("Credenciais inválidas" + JSON.stringify(err)) ||
         err.message.includes("401")
       ) {
         toast.error("Senha está incorreta❌");
