@@ -95,7 +95,7 @@ Siga os passos abaixo para executar o frontend localmente.
 #### Pré-requisitos
 * Node.js (versão 18 ou superior)
 * NPM ou Yarn
-* BackEnd da aplicação rodando localmente ou em um ambiente de desenvolvimento.
+* BackEnd da aplicação rodando localmente ou em um ambiente de desenvolvimento (https://backend-blog-education.onrender.com).
 
 #### Passos para Execução
 
